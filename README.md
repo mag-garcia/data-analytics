@@ -1,5 +1,5 @@
 
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+<p align=center><img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
 
 #  <h2 align="center">**PROYECTO INDIVIDUAL Nº3**</h2>
 
@@ -37,9 +37,33 @@ Para eso, tomando los datos de la API de ENACOM, visualizaremos y analizaremos l
 
 <br>
 
-# Analisis Exploratorio de los datos y transformaciones
+# Análisis Exploratorio de los datos y transformaciones
 
 ## Tablas:
+
+
+### **acceso_100_hogares** : Hogares con disponibilidad a internet cada 100 hogares, separado por provincia, año y trimestre, desde 2014 hasta 2020.
+
+*Transformación :* Las columnas AÑO y TRIMESTRE fueron transformadas a datos numericos, y se creó una nueva columna "fecha" fusionando los datos de trimestre con los de año.
+
+### **acceso_tecnologia** : Diferenciación de los tipos de conexiones de internet segun provincia, año y trimestre.
+
+*Transformación :* Se quitaron errores, se creo una nueva columna "fecha" fusionando los datos de trimestre con los de año.
+
+### **velocidad_media**: Media de la velocidad de bajada de internet, segun provincia, año y trimestre.
+
+*Transformación :* Se quitaron errores, se creó una nueva columna "fecha" fusionando los datos de trimestre con los de año.
+
+### **ingresos** : Ingresos trimestrales de los operadores por el servicio de Internet fijo
+
+*Transformación :* Se creó una nueva columna "fecha" fusionando los datos de trimestre con los de año.
+
+
+## Tablas adicionales:
+
+**calendario** con las fechas que abarca el analisis, para relacionar las fechas trimestrales de cada tabla que lo requiriera.
+
+**provincia** con todas las provincias que aparecen en las tablas, como tabla intermedia para normalizar los nombres.
 
 
 
